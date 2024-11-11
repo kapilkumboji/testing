@@ -53,7 +53,6 @@ const Signup = () => {
   const handleVerifyOTP = async () => {
     if (!confirmationResult) {
       alert('Please request OTP first');
-      return;
     }
     try {
       await confirmationResult.confirm(otp);
